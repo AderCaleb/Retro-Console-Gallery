@@ -1,5 +1,5 @@
 
-// Varablies
+// Varables
 const button = document.getElementById("loadCon");
 const cards = document.getElementById("cards");
 const summary = document.getElementById("summary");
