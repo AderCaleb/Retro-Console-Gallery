@@ -3,10 +3,13 @@
 const button = document.getElementById("loadCon");
 const cards = document.getElementById("cards");
 const summary = document.getElementById("summary");
+const error = document.getElementById("errorMessage");
 
 var xhr = new XMLHttpRequest();
 
 button.addEventListener("click", () => {
+
+    error.textContent = "Loading..."
 
     xhr.open("get", "https://ozarktechwebdev.com/api/consoles.json");
     xhr.send();
@@ -87,7 +90,10 @@ function request() {
             cards.appendChild(card);
         });
 
-        
+        error.textContent = "";
 
+    }
+    else {
+        error.textContent = `Error loading consoles. Status code: ${xhr.status}`;
     }
 }
