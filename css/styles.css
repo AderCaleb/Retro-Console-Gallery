@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+
+h1, #loadCon, #summary {
+    margin: 1rem;
+    color: #01502b;
+}
+
+#loadCon {
+    background-color: #01502b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+}
+
+.card {
+    width: 18rem;
+    color: #01502b;
+}
+
+.row {
+    justify-content: center;
+}

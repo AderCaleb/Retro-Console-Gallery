@@ -63,6 +63,7 @@ function request() {
 
             // Creates an empty div tag
             const card = document.createElement("div");
+            card.classList.add("card");
 
             // Creates an empty img tag
             const img = document.createElement("img");
